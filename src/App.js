@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Menubar } from 'primereact/menubar';
+import { Button } from 'primereact/button';
 
+
+import { StyleClass } from 'primereact/styleclass';
+
+import "./styles.css";
+import AppHeader from "./portfolioContainer/navbar";
+import Home from "./portfolioContainer/home/home"
+import ContactMe from "./portfolioContainer/contactMe/contact";
+import Resume from "./portfolioContainer/myResume/resume";
+import Header from "./portfolioContainer/header";
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import photo2 from "./trspMe.png";
+import Footer from "./portfolioContainer/footer";
+
+
+const siteProps = {
+    name: "Elamri Maryem",
+    title: "Web Designer & Data Analyst",
+    // email: "alex@example.com",
+    // gitHub: "microsoft",
+    // instagram: "microsoft",
+    // linkedIn: "satyanadella",
+    // medium: "",
+    // twitter: "microsoft",
+    // youTube: "Code",
+};
+const primaryColor = "#4E567E";
+const secondaryColor = "#D2F1E4";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+    return (
+        <>
+            <AppHeader/>
+            <main className="main">
+
+                <Home name={siteProps.name} title={siteProps.title} />
+
+                <Resume/>
+                <ContactMe/>
+            </main>
+            <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+       {/*<Footer/>*/}
+        </>
+
+    )
 }
 
 export default App;
