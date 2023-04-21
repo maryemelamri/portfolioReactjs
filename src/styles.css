@@ -30,8 +30,7 @@ section.dark {
 
 section.light {
   color: black;
-  background: rgba(255, 255, 255, 0.35);
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 
 section img.background {
@@ -45,7 +44,17 @@ section img.background {
   pointer-events: none;
   object-fit: cover;
 }
-
+section img.background1 {
+  width: 100vmax;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+  object-fit: cover;
+}
 h1 {
   font-weight: 300;
   font-family: "Cormorant Garamond", serif;

@@ -4,7 +4,7 @@ import arrowSvg from "../../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
 import image from "../../images/server-wall.jpg";
-import image2 from "../../images/codeuse.jpg";
+import image2 from "../../images/codeuse.png";
 import {Button} from "primereact/button";
 const imageAltText = "woman setting on her desktop working is a coding womann";
 

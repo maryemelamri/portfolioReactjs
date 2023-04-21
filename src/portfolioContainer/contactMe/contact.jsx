@@ -4,9 +4,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 const ContactMe = () => {
   return (
       <section id="contact">
-        <Container>
-          <Row>
-            <Col md={6}>
+
               <h2>Contact Me</h2>
               <p>Get in touch with me using the form below or the contact information on the right:</p>
               <Form>
@@ -26,17 +24,6 @@ const ContactMe = () => {
                   Submit
                 </Button>
               </Form>
-            </Col>
-            <Col md={6}>
-              <h2>Contact Information</h2>
-              <ul>
-                <li>Phone: 555-555-5555</li>
-                <li>Email: john.doe@email.com</li>
-                <li>Address: 123 Main St, Anytown USA</li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
       </section>
   );
 };
