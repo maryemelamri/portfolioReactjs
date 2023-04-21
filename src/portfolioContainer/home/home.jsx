@@ -6,10 +6,20 @@ import cv from '../../images/cv.pdf';
 import image from "../../images/server-wall.jpg";
 import image2 from "../../images/codeuse.png";
 import {Button} from "primereact/button";
+
+
+
+import ContactMe from "../contactMe/contact";
+import About from "../aboutMe/aboutMe";
+import TimelineDemo from "../experience/myExperience";
+import Formation from "../myResume/formation";
+
+
 const imageAltText = "woman setting on her desktop working is a coding womann";
 
 const Home = ({ name, title }) => {
     return (
+        <div>
         <section id="home" className="dark">
             <img className="background" src={image2} alt="" />
             <div style={{ position: "absolute", top: "30%", left: "2rem" }}>
@@ -24,6 +34,11 @@ const Home = ({ name, title }) => {
                 <Button label="Contact Me" type="button" className="p-button-outlined"></Button>
             </div>
         </section>
+            <About/>
+            <TimelineDemo/>
+            <Formation/>
+            <ContactMe/>
+        </div>
     );
 };
 

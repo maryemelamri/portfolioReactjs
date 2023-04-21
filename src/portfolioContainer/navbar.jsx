@@ -44,10 +44,16 @@ export default function AppHeader() {
                 url: '/contact'
             },
             {
-                label: 'MyResume',
+                label: 'Formartion',
                 icon: 'pi pi-fw pi-file',
-                url: '/resume'
+                url: '/formation'
+            },
+            {
+                label: 'Experience',
+                icon: 'pi pi-fw pi-file',
+                url: '/experience'
             }
+
         ];
 
     return (
