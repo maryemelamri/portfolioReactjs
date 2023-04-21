@@ -2,7 +2,7 @@
 import React from "react";
 import arrowSvg from "../../images/down-arrow.svg";
 import PropTypes from "prop-types";
-
+import cv from '../../images/cv.pdf';
 import image from "../../images/server-wall.jpg";
 import image2 from "../../images/codeuse.png";
 import {Button} from "primereact/button";
@@ -17,8 +17,10 @@ const Home = ({ name, title }) => {
                 <h2>{title}</h2>
             </div>
             <div style={{ position: "absolute", bottom: "8rem", left: "40%" }}>
+                <a href={cv}  download="cv">
+                <Button  label="Download My Resume" type="button" className="mr-3 p-button-raised">
 
-                <Button  label="Hire Me" type="button" className="mr-3 p-button-raised"></Button>
+                </Button> </a>
                 <Button label="Contact Me" type="button" className="p-button-outlined"></Button>
             </div>
         </section>

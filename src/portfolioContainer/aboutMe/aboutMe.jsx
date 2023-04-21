@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "primereact/card";
 import image from "../../images/background.png";
+import {Col,Row} from "react-bootstrap";
 // const About = () => {
 //     const cardStyle = {
 //         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
@@ -40,10 +41,10 @@ const About = () => {
         <section className="light" id="about">
             <img   className="background" src={image} alt={imageAltText} />
 
-            <div class="shadow-2   justify-content-center "
+            <div class="shadow-2"
                 style={{
                     backgroundColor: "white",
-                    width: "50%",
+                    width: "80%",
                     padding: "4rem",
                     margin: "3rem auto",
                     textAlign: "center",
@@ -51,13 +52,16 @@ const About = () => {
                 }}
             >
                 <h2>About Myself</h2>
-                <p className="large">{description}</p>
+<Row>
+    <p className="large">{description}</p>
+
+</Row>
                 <hr />
-                <ul
+                <Row><ul
                     style={{
                         textAlign: "left",
                         columns: 2,
-                        fontSize: "1.25rem",
+                        fontSize: "1rem",
                         margin: "2rem 3rem",
                         gap: "3rem",
                     }}
@@ -65,7 +69,8 @@ const About = () => {
                     {skillsList.map((skill) => (
                         <li key={skill}>{skill}</li>
                     ))}
-                </ul>
+                </ul></Row>
+
                 <hr />
                 <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
             </div>

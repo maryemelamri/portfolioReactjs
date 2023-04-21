@@ -73,8 +73,8 @@ const Experiences = () => {
 
     return (
 
-            <section className="section row"  >
-                <h5 style={{color:"black"}}> Professional Experience:</h5>
+            <section className="section row" style={{marginTop:"2rem"}}  >
+                <h2 style={{color:"black"}}>   Professional Experience:</h2><br/>
 
                 {experienceData.map((experience, index) => (
 

@@ -36,10 +36,12 @@ const TimelineDemo = () => {
     };
 
     return (
-        <div className="timeline-demo">
 
+        <section className="timeline-demo" style={{marginTop:"2rem"}} >
+
+            <h2>Formation</h2><br/>
             <div className="card">
-                <h5>Formation</h5>
+
                 <Timeline value={events1} align="alternate" className="customized-timeline" marker={customizedMarker} content={customizedContent} />
             </div>
 
@@ -54,7 +56,7 @@ const TimelineDemo = () => {
             {/*    <h6>Alternate Align</h6>*/}
             {/*    <Timeline value={events2} layout="horizontal" align="alternate" content={(item) => item} opposite={<span>&nbsp;</span>} />*/}
             {/*</div>*/}
-        </div>
+        </section>
     );
 }
 

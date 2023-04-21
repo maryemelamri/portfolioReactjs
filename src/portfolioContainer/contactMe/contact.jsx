@@ -20,7 +20,7 @@ const ContactMe = () => {
                   <Form.Label>Message</Form.Label>
                   <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button style={{justifyContent: "center"}}variant="primary" type="submit">
                   Submit
                 </Button>
               </Form>

@@ -11,6 +11,7 @@ import Footer from "./portfolioContainer/footer";
 import Experiences from "./portfolioContainer/experience/myExperience";
 
 
+
 const siteProps = {
     name: "Elamri Maryem",
     title: "Web Designer & Data Analyst",
@@ -25,7 +26,7 @@ function App() {
         <>
             <AppHeader/>
             <main className="main">
-
+                {/*<MyPDF />*/}
                 <Home name={siteProps.name} title={siteProps.title} />
                 <About/>
                 <TimelineDemo/>
