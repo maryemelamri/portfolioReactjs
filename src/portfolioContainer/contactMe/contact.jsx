@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const ContactMe = () => {
   return (
-      <section id="contact">
+      <section id="contact" style={{padding:"4rem"}}>
 
               <h2>Contact Me</h2>
               <p>Get in touch with me using the form below or the contact information on the right:</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'primereact/card';
-import {Col} from "react-bootstrap";
+import {Col,Row} from "react-bootstrap";
 
 
 const ExperienceCard = ({title, duration, tasks,tools }) => {
@@ -8,8 +8,8 @@ const ExperienceCard = ({title, duration, tasks,tools }) => {
     return (
 
 
-            <Col className="col-6">
-        <Card className="bg-light  " style={{margin: "2rem" ,color:"black", height:"500px" }} title={title} footer={duration}>
+            <Col className=" col-m-12 col-sm-12">
+        <Card className="bg-light  " style={{margin: "2rem" ,color:"black", height:"100%" }} title={title} footer={duration}>
 
             <div style={{color:"black"}}>
                 <h5 style={{marginTop:"-1rem"}}>tasks:</h5>
@@ -33,6 +33,7 @@ const ExperienceCard = ({title, duration, tasks,tools }) => {
 
 const Experiences = () => {
     // Données pour chaque expérience
+
     const experienceData = [
         {
             title: 'Summer Internship: Norsys Afrique',
@@ -74,8 +75,9 @@ const Experiences = () => {
     return (
 
             <section className="section row" style={{marginTop:"2rem"}}  >
-                <h2 style={{color:"black"}}>   Professional Experience:</h2><br/>
 
+                <h2 style={{color:"black"}}>   Professional Experience:</h2><br/>
+                   <Row>
                 {experienceData.map((experience, index) => (
 
                     <ExperienceCard
@@ -88,10 +90,11 @@ const Experiences = () => {
                     />
 
 
+
                 ))}
 
 
-
+                   </Row>
             </section>
 
     );
