@@ -9,7 +9,7 @@ const ExperienceCard = ({title, duration, tasks,tools }) => {
 
 
             <Col className=" col-m-12 col-sm-12">
-        <Card className="bg-light  " style={{margin: "2rem" ,color:"black", height:"100%" }} title={title} footer={duration}>
+        <Card className="bg-light  " style={{margin: "2rem" ,color:"black", height:"100%"}} title={title} footer={duration}>
 
             <div style={{color:"black"}}>
                 <h5 style={{marginTop:"-1rem"}}>tasks:</h5>
