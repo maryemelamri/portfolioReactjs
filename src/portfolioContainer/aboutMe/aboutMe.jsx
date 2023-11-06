@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "primereact/card";
 import image from "../../images/background.png";
-import {Col,Row} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 // const About = () => {
 //     const cardStyle = {
 //         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
@@ -19,7 +19,7 @@ import {Col,Row} from "react-bootstrap";
 const imageAltText = "purple and blue abstract background";
 
 const description =
-    "I'm software engineering student studying at Ecole Marocaine des Sciences d'Ingénieurs, Proficient in data analysis, programming languages such as Python and SQL, and UI design and development.";
+    "I'm software engineering student studying at Ecole Marocaine des Sciences d'Ingénieurs, Proficient in data analysis programming languages such as Java/Jee and Javacript, and UI design and development.";
 
 const skillsList = [
     "Statistical analysis",
@@ -33,13 +33,13 @@ const skillsList = [
 ];
 
 const detailOrQuote =
-    "As a data analyst, I enjoy working with data and using programming languages such as Python and SQL to extract insights from it. In addition, I also have skills in UI design and development, allowing me to create visually appealing and user-friendly interfaces for data-driven applications. My passion for technology and problem-solving drives me to continuously learn and improve my skills in data analysis, software engineering, and UI design.";
+    "As a data analyst and software engineering , I enjoy working with data and using programming languages such as Python and SQL to extract insights from it. In addition, I also have skills in UI design and development, allowing me to create visually appealing and user-friendly interfaces for data-driven applications. My passion for technology and problem-solving drives me to continuously learn and improve my skills in data analysis, software engineering, and UI design.";
 
 const About = () => {
     return (
 
         <section className="light" id="about">
-            <img   className="background" src={image} alt={imageAltText} />
+            <img className="background" src={image} alt={imageAltText} />
 
             <div class="shadow-2"
                 style={{
@@ -52,10 +52,10 @@ const About = () => {
                 }}
             >
                 <h2>About Myself</h2>
-<Row>
-    <p className="large">{description}</p>
+                <Row>
+                    <p className="large">{description}</p>
 
-</Row>
+                </Row>
                 <hr />
                 <Row><ul
                     style={{
