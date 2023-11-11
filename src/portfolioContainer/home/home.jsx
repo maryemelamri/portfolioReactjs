@@ -49,7 +49,8 @@ const Home = ({ name, title }) => {
             <Formation />
             {/* <ContactMe /> */}
             <Contact />
-            <SkillsSection /></div>
+            {/* <SkillsSection /> */}
+        </div>
     );
 };
 
